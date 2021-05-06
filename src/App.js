@@ -15,6 +15,7 @@ class App extends React.Component {
     return (
       <div className="ui container" style={{ marginTop: "35px" }}>
         <ShearchInput onSearchSubmit={this.onSearchSubmit} />
+        <h1>{this.state.images.length} imagenes encontradas</h1>
         <div className='ui three stackable cards'>
           <ImageList images={this.state.images} />
         </div>
