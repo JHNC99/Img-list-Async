@@ -11,7 +11,7 @@ class ShearchInput extends React.Component {
   //   super()
   //   this.onFormSubmit=this.onFormSubmit.bind(this);
   // }
-  state={entry:'he.....'}
+  state={entry:''}
   
   onFormSubmit=(e)=>{
     e.preventDefault();
@@ -25,8 +25,8 @@ class ShearchInput extends React.Component {
             <div className="ui massive icon input">
               <input
                 type="text"
-                placeholder="Search....."
-                onChange={(e)=>this.setState({entry:e.target.value.toLocaleUpperCase()})}
+                placeholder="Search images"
+                onChange={(e)=>this.setState({entry:e.target.value})}
                 value={this.state.entry}
               />
               <i className="search icon"></i>
